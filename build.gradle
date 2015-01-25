@@ -7,7 +7,7 @@ sourceCompatibility = JavaVersion.VERSION_1_7
 version = '1.0'
 
 repositories {
-    mavenCentral()
+    jcenter()
 }
 
 buildscript {
@@ -15,7 +15,7 @@ buildscript {
         classpath "org.springframework.boot:spring-boot-gradle-plugin:1.2.1.RELEASE"
     }
     repositories {
-        mavenCentral()
+        jcenter()
     }
 }
 
