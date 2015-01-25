@@ -1,12 +1,14 @@
 apply plugin: 'java'
 apply plugin: 'groovy'
+apply plugin: 'spring-boot'
 
-sourceCompatibility = 1.6
+sourceCompatibility = JavaVersion.VERSION_1_7
+
 version = '1.0'
+
 repositories {
     mavenCentral()
 }
-
 
 buildscript {
     dependencies {
@@ -17,11 +19,8 @@ buildscript {
     }
 }
 
-apply plugin: 'spring-boot'
-
 dependencies {
     compile "org.springframework.boot:spring-boot-starter-web"
-
     compile 'org.codehaus.groovy:groovy-all:2.4.0'
 
     testCompile 'org.codehaus.groovy:groovy-all:2.4.0'
